@@ -2,11 +2,18 @@ package edu.wctc.creator;
 
 import java.util.List;
 
+/**
+ * Class that tests whether Hand Variation is either true or false
+ */
 public class Poker {
 
     private static final int HIGH_CARD = 14;
     private static final int CARDS_IN_HAND = 5;
 
+    /**
+     * @param hand users hand
+     * @return returns whether hand is Straight
+     */
     public boolean isStraight(List<Card> hand) {
         boolean isTheHand = true;
         int prevScore = 0;
@@ -24,6 +31,10 @@ public class Poker {
         return  isTheHand;
     }
 
+    /**
+     * @param hand users hand
+     * @return returns whether hand is a Straight Flush
+     */
     public boolean isStraightFlush(List<Card> hand) {
         boolean isTheHand = true;
         int prevScore = 0;
@@ -43,6 +54,10 @@ public class Poker {
         return isTheHand;
     }
 
+    /**
+     * @param hand users hand
+     * @return returns whether hand has a high-card
+     */
     public boolean isHighCard(List<Card> hand) {
         boolean isTheHand = false;
         int score = 0;
@@ -59,6 +74,10 @@ public class Poker {
         return isTheHand;
     }
 
+    /**
+     * @param hand users hand
+     * @return returns whether hand is a royal flush
+     */
     public boolean isRoyalFlush(List<Card> hand) {
         boolean isTheHand = true;
         int prevScore = 0;
@@ -79,6 +98,10 @@ public class Poker {
         return isTheHand;
     }
 
+    /**
+     * @param hand users hand
+     * @return returns whether hand is a flush
+     */
     public boolean isFlush(List<Card> hand) {
         boolean isTheHand = false;
         int prevScore = 0;
@@ -98,7 +121,10 @@ public class Poker {
         return isTheHand;
     }
 
-    //extra
+     /**
+     * @param hand users hand
+     * @return returns whether hand has a pair
+     */ //extra
     public boolean isOnePair(List<Card> hand) {
         boolean isTheHand = false;
 
@@ -116,7 +142,10 @@ public class Poker {
         return isTheHand;
     }
 
-    //extra
+    /**
+     * @param hand users hand
+     * @return returns whether hand has two pairs
+     */ //extra
     public boolean isTwoPair(List<Card> hand) {
         List<Card> tempHand;
         boolean hasOnePair = false;
@@ -157,7 +186,10 @@ public class Poker {
         return isTheHand;
     }
 
-    //extra
+    /**
+     * @param hand users hand
+     * @return returns whether hand matches Three Of A Kind
+     */ //extra
     public boolean isThreeOfAKind(List<Card> hand) {
         boolean isTheHand = false;
         int prevScore = 0;
@@ -181,7 +213,10 @@ public class Poker {
         return isTheHand;
     }
 
-    //extra
+    /**
+     * @param hand users hand
+     * @return returns whether hand matches Four Of A Kind
+     */ //extra
     public boolean isFourOfAKind(List<Card> hand) {
         boolean isTheHand = false;
         int prevScore = 0;
