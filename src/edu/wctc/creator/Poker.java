@@ -123,7 +123,7 @@ public class Poker {
 
      /**
      * @param hand users hand
-     * @return returns whether hand has a pair
+     * @return returns whether a hand has a pair
      */ //extra
     public boolean isOnePair(List<Card> hand) {
         boolean isTheHand = false;
@@ -144,7 +144,7 @@ public class Poker {
 
     /**
      * @param hand users hand
-     * @return returns whether hand has two pairs
+     * @return returns whether a hand has two pairs
      */ //extra
     public boolean isTwoPair(List<Card> hand) {
         List<Card> tempHand;
@@ -188,7 +188,7 @@ public class Poker {
 
     /**
      * @param hand users hand
-     * @return returns whether hand matches Three Of A Kind
+     * @return returns whether a hand matches Three Of A Kind
      */ //extra
     public boolean isThreeOfAKind(List<Card> hand) {
         boolean isTheHand = false;
@@ -215,7 +215,7 @@ public class Poker {
 
     /**
      * @param hand users hand
-     * @return returns whether hand matches Four Of A Kind
+     * @return returns whether a hand matches Four Of A Kind
      */ //extra
     public boolean isFourOfAKind(List<Card> hand) {
         boolean isTheHand = false;
